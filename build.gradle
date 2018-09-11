@@ -1,0 +1,15 @@
+plugins {
+    id 'groovy'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // Changing the Groovy version to 2.5.2 will break building the project via IntelliJ, but not via Gradle command-line
+    implementation 'org.codehaus.groovy:groovy:2.4.15'
+}
+
+mainClassName = 'org.example.jdi.App'
